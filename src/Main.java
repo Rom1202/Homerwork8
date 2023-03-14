@@ -62,9 +62,10 @@ public class Main {
         System.out.println("Задача 4");
         int[] weights = {1,2,3};
         for (int i = 0; i < weights.length; i++) {
-            weights [0] = weights[0] + 1;
-            weights [2]= weights[0] ;
-            System.out.println(weights[i]);
+            if (weights[i] % 2 != 0) {
+                weights[i] += 1;
+            }
+        }
+            System.out.println(Arrays.toString(weights));
         }
     }
-}
